@@ -1,0 +1,13 @@
+.DS_Store
+*.tmproj
+*.log
+*.pid
+*.sqlite3
+coverage
+public/system
+tmp/*
+config/database.yml
+config/mongo.yml
+config/development.sphinx.conf
+db/sphinx/
+solr/development

@@ -1,0 +1,7 @@
+== Welcome to the Juicer sample app
+
+This is a sample Rails 3 app that uses the upload_juicer gem to interact
+with the Juicer API at http://www.uploadjuicer.com.
+
+Check out the Person model (and associated controller and views) to see
+how the upload_juicer gem is used in a typical Rails app.

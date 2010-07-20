@@ -1,0 +1,25 @@
+<%= form_for @person do |p| %>
+  <%= p.hidden_field :image_key, :id => :image_key %>
+  <%= p.hidden_field :image_id, :id => :image_id %>
+
+  <p>
+    <%= p.label :name %>
+    <%= p.text_field :name %>
+  </p>
+
+  <div id="file_container"></div>
+  <p id="upload_placeholder" class="uploadify"></p>
+	
+	<p><%= p.submit %></p>
+<% end %>
+
+<% content_for :head do %>
+  <%= stylesheet_link_tag('swfupload.css') %>
+<% end %>
+
+<% content_for :foot do %>
+  <%= javascript_include_tag('swfupload.js', 'uploader.js') %>
+  <script type="text/javascript">
+    $('#upload_placeholder').uploadify(<%= swfupload_params %>);
+  </script>
+<% end %>
